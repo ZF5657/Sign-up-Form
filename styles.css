@@ -50,6 +50,21 @@ table {
 }
 
 /* Styling after reset */
+@font-face {
+	font-family: NorseBold;
+	src: url(Norse-Bold.otf) format(opentype);
+}
+
+@font-face {
+	font-family: Hussar3D;
+	src: url(Dion-vdDD.otf) format(opentype);
+}
+
+@font-face {
+	font-family: Znikos;
+	src: url(Znikoslsvginot8-GOB3y.ttf);
+}
+
 * {
     margin: none;
 }
@@ -70,12 +85,6 @@ table {
 	background-position: center center;
 }
 
-/* .sunset {
-	width: 100%;
-	height: 100%;
-    object-fit: cover;
-} */
-
 .logo-background {
 	display: flex;
 	flex-direction: column;
@@ -93,9 +102,16 @@ svg {
 	fill:#ffffff
 }
 
+.odin {
+	font-family: NorseBold;
+	font-size: 1.5rem;
+	margin-bottom: 5px;
+}
+
 .logo {
 	font-size: 2rem;
-	font-family: Courier New, monospace;
+	font-family: Znikos;
+	font-weight: 900;
 }
 
 .source {
@@ -122,6 +138,107 @@ a:active {
 }
 
 .right-side {
+	display: flex;
+	flex-direction: column;
     height: 100%;
     width: 60vw;
+	background-color: #e27815;
+}
+
+.top-p {
+	height: 40%;
+	font-family: Znikos;
+	font-size: 2rem;
+	font-weight: 900;
+	color: #ffffff;
+}
+
+.top1 {
+	margin-top: 2%;
+}
+
+.top2 {
+	margin-top: 2%;
+}
+
+.top3 {
+	margin-top: 12%;
+}
+
+p {
+	margin-left: 4%;
+	line-height: 40px;
+}
+
+.middle-form {
+	background-color: #fcfaf6;
+	height: 30%;
+	width: 90%;
+	margin-left: 5%;
+	color: #30363b;
+	box-shadow: 0 0 20px 8px #545457;
+	border-radius: 20px;
+}
+
+.form-left {
+	display: flex;
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+.form-middle {
+	display: flex;
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+.form-right {
+	display: flex;
+	margin-top: 2%;
+	margin-left: 8%;
+}
+
+.forms {
+	display: flex;
+	flex-direction: column;
+	margin-right: 3%;
+	color: #30363b;
+	font-family: Courier New, monospace;
+}
+
+legend {
+	margin-left: 4%;
+	font-family: Hussar3D;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+input {
+	border-radius: 4px;
+	font-size: 1.25rem;
+}
+
+.footer {
+	height: 30%;
+	margin-top: 3%;
+	color: #ffffff;
+}
+
+.footer-p {
+	margin-left: 8%;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+button {
+	margin-left: 8%;
+	height: 60px;
+	width: 125px;
+	background-color: #a9c0d6;
+	border-radius: 10px;
+	border: 2px solid #55616d;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	font-weight: 700;
+	color: #000000;
 }
