@@ -52,17 +52,17 @@ table {
 /* Styling after reset */
 @font-face {
 	font-family: NorseBold;
-	src: url(Norse-Bold.otf) format(opentype);
+	src: url(fonts/Norse-Bold.otf) format(opentype);
 }
 
 @font-face {
 	font-family: Hussar3D;
-	src: url(Dion-vdDD.otf) format(opentype);
+	src: url(fonts/Dion-vdDD.otf) format(opentype);
 }
 
 @font-face {
 	font-family: Znikos;
-	src: url(Znikoslsvginot8-GOB3y.ttf);
+	src: url(fonts/Znikoslsvginot8-GOB3y.ttf);
 }
 
 * {
@@ -92,7 +92,7 @@ table {
 	align-items: center;
 	margin-top: 200px;
 	width: 100%;
-	height: 150px;
+	height: 175px;
 	background-color: rgba(0, 0, 0, 0.322);
 	color: white;
 }
@@ -102,9 +102,15 @@ svg {
 	fill:#ffffff
 }
 
+.odin-logo {
+	height: 40px;
+	width: 40px;
+	margin-top: 6%;
+}
+
 .odin {
 	font-family: NorseBold;
-	font-size: 1.5rem;
+	font-size: 1.75rem;
 	margin-bottom: 5px;
 }
 
@@ -114,11 +120,25 @@ svg {
 	font-weight: 900;
 }
 
-.source {
-	color: #ffffff;
+.credit {
+	display: flex;
 	margin-top: 80%;
+	color: #ffffff;
+	font-size: .85rem;
+}
+
+.source {
 	margin-left: 10%;
 	font-size: .85rem;
+}
+
+.github-logo {
+	height: 1.25vh;
+	width: 1.25vh;
+}
+
+.github {
+	margin-left: 45%;
 }
 
 a:link { 
@@ -146,7 +166,7 @@ a:active {
 }
 
 .top-p {
-	height: 40%;
+	height: 50%;
 	font-family: Znikos;
 	font-size: 2rem;
 	font-weight: 900;
@@ -162,11 +182,16 @@ a:active {
 }
 
 .top3 {
-	margin-top: 12%;
+	margin-top: 15%;
+}
+
+.today {
+	font-style: italic;
+	text-decoration: underline;
 }
 
 p {
-	margin-left: 4%;
+	margin-left: 5%;
 	line-height: 40px;
 }
 
@@ -182,19 +207,19 @@ p {
 
 .form-left {
 	display: flex;
-	margin-top: 2%;
+	margin-top: 3%;
 	margin-left: 8%;
 }
 
 .form-middle {
 	display: flex;
-	margin-top: 2%;
+	margin-top: 2.5%;
 	margin-left: 8%;
 }
 
 .form-right {
 	display: flex;
-	margin-top: 2%;
+	margin-top: 2.5%;
 	margin-left: 8%;
 }
 
@@ -214,31 +239,47 @@ legend {
 }
 
 input {
-	border-radius: 4px;
+	border-radius: 7px;
 	font-size: 1.25rem;
+	width: 85%;
 }
 
 .footer {
 	height: 30%;
-	margin-top: 3%;
+	margin-top: 2%;
 	color: #ffffff;
 }
 
 .footer-p {
-	margin-left: 8%;
+	margin-left: 5%;
 	font-weight: 700;
 	font-size: 15px;
 }
 
 button {
-	margin-left: 8%;
-	height: 60px;
+	margin-left: 5%;
+	height: 50px;
 	width: 125px;
-	background-color: #a9c0d6;
+	background-color: #a9d4fc;
 	border-radius: 10px;
 	border: 2px solid #55616d;
 	font-family: Georgia, serif;
 	font-size: 16px;
 	font-weight: 700;
 	color: #000000;
+}
+
+button:hover {
+	cursor: grab;
+	filter: brightness(1.02);
+}
+
+button:active {
+	border: 2px solid #55616d;
+    box-shadow: #585858 0px 0px 17px inset;
+    text-shadow: #acacac 1px 0 10px;
+}
+
+.log-in {
+	text-decoration: underline;
 }
