@@ -36,18 +36,18 @@
                         <div class="form-left">
                             <div class="forms">
                                 <label for="first_name">*First Name:</label>
-                                <input type="text" id="first_name" name="first_name" placeholder="John Jacob">
+                                <input type="text" class="required" id="first_name" name="first_name" placeholder="John Jacob" required>
                             </div>
 
                             <div class="forms">
                                 <label for="last_name">*Last Name:</label>
-                                <input type="text" id="last_name" name="last_name" placeholder="Jingleheimer Schmidt">
+                                <input type="text" class="required" id="last_name" name="last_name" placeholder="Jingleheimer Schmidt" required>
                             </div>
                         </div>
                         <div class="form-middle">
                             <div class="forms">
                                 <label for="user_email">*Email Address:</label>
-                                <input type="email" id="user_email" name="email" placeholder="jjjschmidt@example.com">
+                                <input type="email" class="required" id="user_email" name="email" placeholder="jjjschmidt@example.com" required>
                             </div>
 
                             <div class="forms">
@@ -58,22 +58,23 @@
                         <div class="form-right">
                             <div class="forms">
                                 <label for="user_password">*Password:</label>
-                                <input type="password" id="user_password" name="password">
+                                <input type="password" class="required" id="user_password" name="password" required>
                             </div>
 
                             <div class="forms">
                                 <label for="user_password">*Confirm Password:</label>
-                                <input type="password" id="confirm_password" name="confirm_password">
+                                <input type="password" class="required" id="confirm_password" name="confirm_password" required>
                             </div>
                         </div>
                     </form>
                 </fieldset>
             </div>
             <div class="footer">
-                <button>Create Account</button>
+                <button class="submit">Create Account</button>
                 <p class="footer-p">Already have an account? <span class="log-in">Log in</span></p>
             </div>
         </div>
     </div>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
