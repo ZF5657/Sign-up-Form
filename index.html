@@ -29,7 +29,7 @@
                 <p class="top2">This imaginary website's company has much more to offer than the competitors. You know you want to sign up for this.</p>
                 <p class="top3">Don't miss out. Sign up <span class="today">today</span> for a limited time offer!</p>
             </div>
-            <div class="middle-form">
+            <div class="right-side-mid">
                 <fieldset>
                     <legend>Sign up below!</legend>
                     <form action="examplewebsite.com/path" method="post">
@@ -37,33 +37,51 @@
                             <div class="forms">
                                 <label for="first_name">*First Name:</label>
                                 <input type="text" class="required" id="first_name" name="first_name" placeholder="John Jacob" required>
+                                <div class="errorMsg" id="firstMsg">
+                                    <p>You must enter a first name.</p>
+                                </div>
                             </div>
 
                             <div class="forms">
                                 <label for="last_name">*Last Name:</label>
                                 <input type="text" class="required" id="last_name" name="last_name" placeholder="Jingleheimer Schmidt" required>
+                                <div class="errorMsg" id="lastMsg">
+                                    <p>You must enter a last name.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="form-middle">
                             <div class="forms">
                                 <label for="user_email">*Email Address:</label>
                                 <input type="email" class="required" id="user_email" name="email" placeholder="jjjschmidt@example.com" required>
+                                <div class="errorMsg" id="emailMsg">
+                                    <p>You must enter a valid email address.</p>
+                                </div>
                             </div>
 
                             <div class="forms">
                                 <label for="phone_number">Phone Number:</label>
-                                <input type="tel" id="phone_number" name="phone_number" placeholder="(444) 444-4444">
+                                <input type="tel" id="phone_number" name="phone_number" maxlength="16" placeholder="(444) 444-4444">
+                                <div class="errorMsg" id="phoneMsg">
+                                    <p>Please enter a valid phone number.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="form-right">
                             <div class="forms">
                                 <label for="user_password">*Password:</label>
                                 <input type="password" class="required" id="user_password" name="password" required>
+                                <div class="errorMsg" id="passMsg">
+                                    <p>You must enter a password.</p>
+                                </div>
                             </div>
 
                             <div class="forms">
                                 <label for="user_password">*Confirm Password:</label>
                                 <input type="password" class="required" id="confirm_password" name="confirm_password" required>
+                                <div class="errorMsg" id="confirmMsg">
+                                    <p>Passwords do not match.</p>
+                                </div>
                             </div>
                         </div>
                     </form>

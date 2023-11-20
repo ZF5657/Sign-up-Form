@@ -171,9 +171,11 @@ a:active {
 
 .top-p {
 	height: 50%;
+	margin-left: 5%;
 	font-family: Znikos;
 	font-size: 2rem;
 	font-weight: 900;
+	line-height: 40px;
 	color: #ffffff;
 }
 
@@ -194,14 +196,9 @@ a:active {
 	text-decoration: underline;
 }
 
-p {
-	margin-left: 5%;
-	line-height: 40px;
-}
-
-.middle-form {
+.right-side-mid {
 	background-color: #fcfaf6;
-	height: 30%;
+	height: 35%;
 	width: 90%;
 	margin-left: 5%;
 	color: #30363b;
@@ -262,6 +259,7 @@ input {
 
 button {
 	margin-left: 5%;
+	margin-bottom: 1%;
 	height: 50px;
 	width: 125px;
 	background-color: #a9d4fc;
@@ -312,3 +310,8 @@ input:required:empty:invalid:not(:placeholder-shown) {
 	outline: none;
 }
 
+.errorMsg {
+	margin-top: 1%;
+	font-size: .75rem;
+	color: red;
+}
